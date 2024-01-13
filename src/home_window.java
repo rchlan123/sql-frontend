@@ -26,6 +26,7 @@ public class home_window extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
+        label1 = new java.awt.Label();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -33,6 +34,9 @@ public class home_window extends javax.swing.JFrame {
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/background.jpg"))); // NOI18N
         jLabel1.setText("jLabel1");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
+        label1.setText("label1");
+        getContentPane().add(label1, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 210, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -74,5 +78,6 @@ public class home_window extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
+    private java.awt.Label label1;
     // End of variables declaration//GEN-END:variables
 }
