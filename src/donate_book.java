@@ -40,6 +40,8 @@ public class donate_book extends javax.swing.JFrame {
         jLabel14 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
         jLabel1 = new javax.swing.JLabel();
 
         jLabel6.setFont(new java.awt.Font("Montserrat ExtraBold", 1, 14)); // NOI18N
@@ -71,7 +73,7 @@ public class donate_book extends javax.swing.JFrame {
         jLabel5.setFont(new java.awt.Font("Montserrat ExtraBold", 1, 13)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Genre");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 360, 130, 50));
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 350, 130, 50));
 
         jLabel8.setFont(new java.awt.Font("Montserrat ExtraBold", 1, 13)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
@@ -96,12 +98,12 @@ public class donate_book extends javax.swing.JFrame {
         jLabel14.setFont(new java.awt.Font("Montserrat ExtraBold", 1, 13)); // NOI18N
         jLabel14.setForeground(new java.awt.Color(255, 255, 255));
         jLabel14.setText("Description");
-        getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 290, 130, 50));
+        getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 270, 130, 50));
 
         jLabel15.setFont(new java.awt.Font("Montserrat ExtraBold", 1, 13)); // NOI18N
         jLabel15.setForeground(new java.awt.Color(255, 255, 255));
         jLabel15.setText("Book Image");
-        getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 330, 130, 50));
+        getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 320, 130, 50));
 
         jButton1.setFont(new java.awt.Font("Montserrat", 1, 13)); // NOI18N
         jButton1.setText("DONATE");
@@ -110,7 +112,22 @@ public class donate_book extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 430, 90, 30));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 410, 90, 30));
+
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Person ID", "Name", "Email", "Phone Number"
+            }
+        ));
+        jScrollPane1.setViewportView(jTable1);
+
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 110, 360, 330));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fade_background.png"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
@@ -173,5 +190,7 @@ public class donate_book extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTable jTable1;
     // End of variables declaration//GEN-END:variables
 }
