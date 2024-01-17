@@ -60,7 +60,7 @@ public class donate_book extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("League Spartan Black", 1, 18)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("BOOK INFORMATION");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 170, 200, 40));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 150, 200, 40));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/home.png"))); // NOI18N
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 40, -1, -1));
@@ -71,27 +71,27 @@ public class donate_book extends javax.swing.JFrame {
         jLabel5.setFont(new java.awt.Font("Montserrat ExtraBold", 1, 13)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Genre");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 380, 130, 50));
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 360, 130, 50));
 
         jLabel8.setFont(new java.awt.Font("Montserrat ExtraBold", 1, 13)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("Person ID");
-        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 120, 130, 50));
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 90, 130, 50));
 
         jLabel10.setFont(new java.awt.Font("Montserrat ExtraBold", 1, 13)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(255, 255, 255));
         jLabel10.setText("Title");
-        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 200, 130, 50));
+        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 180, 130, 50));
 
         jLabel11.setFont(new java.awt.Font("Montserrat ExtraBold", 1, 13)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(255, 255, 255));
         jLabel11.setText("Author");
-        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 230, 130, 50));
+        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 210, 130, 50));
 
         jLabel12.setFont(new java.awt.Font("Montserrat ExtraBold", 1, 13)); // NOI18N
         jLabel12.setForeground(new java.awt.Color(255, 255, 255));
         jLabel12.setText("ISBN");
-        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 260, 130, 50));
+        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 240, 130, 50));
 
         jLabel14.setFont(new java.awt.Font("Montserrat ExtraBold", 1, 13)); // NOI18N
         jLabel14.setForeground(new java.awt.Color(255, 255, 255));
@@ -101,7 +101,7 @@ public class donate_book extends javax.swing.JFrame {
         jLabel15.setFont(new java.awt.Font("Montserrat ExtraBold", 1, 13)); // NOI18N
         jLabel15.setForeground(new java.awt.Color(255, 255, 255));
         jLabel15.setText("Book Image");
-        getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 350, 130, 50));
+        getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 330, 130, 50));
 
         jButton1.setFont(new java.awt.Font("Montserrat", 1, 13)); // NOI18N
         jButton1.setText("DONATE");
