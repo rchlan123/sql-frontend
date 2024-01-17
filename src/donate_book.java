@@ -1,6 +1,4 @@
 
-import java.awt.Color;
-
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
@@ -17,7 +15,6 @@ public class donate_book extends javax.swing.JFrame {
      */
     public donate_book() {
         initComponents();
-        jPanel1.setBackground(new Color(0,0,0,0));
     }
 
     /**
