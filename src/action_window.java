@@ -26,9 +26,9 @@ public class action_window extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel2 = new javax.swing.JLabel();
-        jButton6 = new javax.swing.JButton();
+        donate = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
+        return_book = new javax.swing.JButton();
         back = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
@@ -40,14 +40,14 @@ public class action_window extends javax.swing.JFrame {
         jLabel2.setText("ACTIONS");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 170, 400, 70));
 
-        jButton6.setFont(new java.awt.Font("Montserrat", 1, 14)); // NOI18N
-        jButton6.setText("DONATE BOOKS");
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
+        donate.setFont(new java.awt.Font("Montserrat", 1, 14)); // NOI18N
+        donate.setText("DONATE BOOKS");
+        donate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
+                donateActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 240, 280, 30));
+        getContentPane().add(donate, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 240, 280, 30));
 
         jButton5.setFont(new java.awt.Font("Montserrat", 1, 14)); // NOI18N
         jButton5.setText("BORROW A BOOK");
@@ -58,14 +58,14 @@ public class action_window extends javax.swing.JFrame {
         });
         getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 280, 280, 30));
 
-        jButton4.setFont(new java.awt.Font("Montserrat", 1, 14)); // NOI18N
-        jButton4.setText("RETURN A BOOK");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        return_book.setFont(new java.awt.Font("Montserrat", 1, 14)); // NOI18N
+        return_book.setText("RETURN A BOOK");
+        return_book.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                return_bookActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 320, 280, 30));
+        getContentPane().add(return_book, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 320, 280, 30));
 
         back.setIcon(new javax.swing.ImageIcon(getClass().getResource("/back-button.png"))); // NOI18N
         back.setBorder(null);
@@ -85,17 +85,19 @@ public class action_window extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton6ActionPerformed
+    private void donateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_donateActionPerformed
+        donate_book pi = new donate_book();
+        pi.setVisible(true);
+    }//GEN-LAST:event_donateActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        // TODO add your handling code here:
+        // add code for borrow button
     }//GEN-LAST:event_jButton5ActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ActionPerformed
+    private void return_bookActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_return_bookActionPerformed
+        return_book pi = new return_book();
+        pi.setVisible(true);
+    }//GEN-LAST:event_return_bookActionPerformed
 
     private void backActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backActionPerformed
         this.hide();
@@ -140,10 +142,10 @@ public class action_window extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton back;
-    private javax.swing.JButton jButton4;
+    private javax.swing.JButton donate;
     private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JButton return_book;
     // End of variables declaration//GEN-END:variables
 }

@@ -26,8 +26,8 @@ public class menu_page extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel3 = new javax.swing.JLabel();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
+        actions = new javax.swing.JButton();
+        browse_books = new javax.swing.JButton();
         back = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
 
@@ -39,23 +39,23 @@ public class menu_page extends javax.swing.JFrame {
         jLabel3.setText("MENU");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 180, 370, 70));
 
-        jButton4.setFont(new java.awt.Font("Montserrat", 1, 14)); // NOI18N
-        jButton4.setText("ACTIONS");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        actions.setFont(new java.awt.Font("Montserrat", 1, 14)); // NOI18N
+        actions.setText("ACTIONS");
+        actions.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                actionsActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 280, 280, 30));
+        getContentPane().add(actions, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 280, 280, 30));
 
-        jButton5.setFont(new java.awt.Font("Montserrat", 1, 14)); // NOI18N
-        jButton5.setText("BROWSE BOOKS");
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
+        browse_books.setFont(new java.awt.Font("Montserrat", 1, 14)); // NOI18N
+        browse_books.setText("BROWSE BOOKS");
+        browse_books.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+                browse_booksActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 240, 280, 30));
+        getContentPane().add(browse_books, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 240, 280, 30));
 
         back.setIcon(new javax.swing.ImageIcon(getClass().getResource("/back-button.png"))); // NOI18N
         back.setBorder(null);
@@ -75,13 +75,15 @@ public class menu_page extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ActionPerformed
+    private void actionsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_actionsActionPerformed
+        action_window pi = new action_window();
+        pi.setVisible(true);
+    }//GEN-LAST:event_actionsActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton5ActionPerformed
+    private void browse_booksActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_browse_booksActionPerformed
+        browse_books pi = new browse_books();
+        pi.setVisible(true);
+    }//GEN-LAST:event_browse_booksActionPerformed
 
     private void backActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backActionPerformed
         this.hide();
@@ -126,9 +128,9 @@ public class menu_page extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton actions;
     private javax.swing.JButton back;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
+    private javax.swing.JButton browse_books;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     // End of variables declaration//GEN-END:variables
