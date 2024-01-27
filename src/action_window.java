@@ -27,7 +27,7 @@ public class action_window extends javax.swing.JFrame {
 
         jLabel2 = new javax.swing.JLabel();
         donate = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
+        borrow = new javax.swing.JButton();
         return_book = new javax.swing.JButton();
         back = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
@@ -49,14 +49,14 @@ public class action_window extends javax.swing.JFrame {
         });
         getContentPane().add(donate, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 240, 280, 30));
 
-        jButton5.setFont(new java.awt.Font("Montserrat", 1, 14)); // NOI18N
-        jButton5.setText("BORROW A BOOK");
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
+        borrow.setFont(new java.awt.Font("Montserrat", 1, 14)); // NOI18N
+        borrow.setText("BORROW A BOOK");
+        borrow.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+                borrowActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 280, 280, 30));
+        getContentPane().add(borrow, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 280, 280, 30));
 
         return_book.setFont(new java.awt.Font("Montserrat", 1, 14)); // NOI18N
         return_book.setText("RETURN A BOOK");
@@ -79,7 +79,7 @@ public class action_window extends javax.swing.JFrame {
         getContentPane().add(back, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 440, -1, -1));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/background.png"))); // NOI18N
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -4, -1, 510));
 
         pack();
         setLocationRelativeTo(null);
@@ -90,9 +90,10 @@ public class action_window extends javax.swing.JFrame {
         pi.setVisible(true);
     }//GEN-LAST:event_donateActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        // add code for borrow button
-    }//GEN-LAST:event_jButton5ActionPerformed
+    private void borrowActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_borrowActionPerformed
+        borrow_book pi = new borrow_book();
+        pi.setVisible(true);
+    }//GEN-LAST:event_borrowActionPerformed
 
     private void return_bookActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_return_bookActionPerformed
         return_book pi = new return_book();
@@ -142,8 +143,8 @@ public class action_window extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton back;
+    private javax.swing.JButton borrow;
     private javax.swing.JButton donate;
-    private javax.swing.JButton jButton5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JButton return_book;
