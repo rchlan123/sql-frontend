@@ -41,7 +41,7 @@ public class book_title extends javax.swing.JFrame {
         jLabel22 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
         back = new javax.swing.JButton();
-        home = new javax.swing.JButton();
+        menu = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -146,17 +146,15 @@ public class book_title extends javax.swing.JFrame {
         });
         getContentPane().add(back, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 440, -1, -1));
 
-        home.setIcon(new javax.swing.ImageIcon(getClass().getResource("/home.png"))); // NOI18N
-        home.setBorder(null);
-        home.setBorderPainted(false);
-        home.setContentAreaFilled(false);
-        home.setOpaque(false);
-        home.addActionListener(new java.awt.event.ActionListener() {
+        menu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/menu icon.png"))); // NOI18N
+        menu.setBorderPainted(false);
+        menu.setContentAreaFilled(false);
+        menu.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                homeActionPerformed(evt);
+                menuActionPerformed(evt);
             }
         });
-        getContentPane().add(home, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 40, -1, -1));
+        getContentPane().add(menu, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 40, -1, 30));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fade_background.png"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
@@ -171,11 +169,11 @@ public class book_title extends javax.swing.JFrame {
         frm.setVisible(true);
     }//GEN-LAST:event_backActionPerformed
 
-    private void homeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_homeActionPerformed
+    private void menuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuActionPerformed
         this.hide();
-        home_page frm=new home_page();
+        menu_page frm=new menu_page();
         frm.setVisible(true);
-    }//GEN-LAST:event_homeActionPerformed
+    }//GEN-LAST:event_menuActionPerformed
 
     /**
      * @param args the command line arguments
@@ -214,7 +212,6 @@ public class book_title extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton back;
-    private javax.swing.JButton home;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -231,5 +228,6 @@ public class book_title extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JButton menu;
     // End of variables declaration//GEN-END:variables
 }

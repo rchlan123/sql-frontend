@@ -97,7 +97,7 @@ public class donate_book extends javax.swing.JFrame {
         search = new javax.swing.JTextField();
         jLabel8 = new javax.swing.JLabel();
         jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
+        menu = new javax.swing.JButton();
         jLabel16 = new javax.swing.JLabel();
 
         jLabel6.setFont(new java.awt.Font("Montserrat ExtraBold", 1, 14)); // NOI18N
@@ -136,7 +136,7 @@ public class donate_book extends javax.swing.JFrame {
         jLabel11.setFont(new java.awt.Font("Montserrat ExtraBold", 1, 13)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(255, 255, 255));
         jLabel11.setText("Author");
-        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 170, 50, 50));
+        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 170, 70, 50));
 
         jLabel12.setFont(new java.awt.Font("Montserrat ExtraBold", 1, 13)); // NOI18N
         jLabel12.setForeground(new java.awt.Color(255, 255, 255));
@@ -237,18 +237,15 @@ public class donate_book extends javax.swing.JFrame {
         });
         getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 40, -1, -1));
 
-        jButton6.setFont(new java.awt.Font("League Spartan Black", 1, 14)); // NOI18N
-        jButton6.setForeground(new java.awt.Color(255, 255, 255));
-        jButton6.setText("MENU");
-        jButton6.setBorder(null);
-        jButton6.setBorderPainted(false);
-        jButton6.setContentAreaFilled(false);
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
+        menu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/menu icon.png"))); // NOI18N
+        menu.setBorderPainted(false);
+        menu.setContentAreaFilled(false);
+        menu.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
+                menuActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 50, -1, 20));
+        getContentPane().add(menu, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 40, -1, 30));
 
         jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fade_background.png"))); // NOI18N
         getContentPane().add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
@@ -274,7 +271,7 @@ public class donate_book extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-this.hide();
+        this.hide();
         registration_page frm=new registration_page();
         frm.setVisible(true);    }//GEN-LAST:event_jButton5ActionPerformed
 
@@ -295,11 +292,11 @@ this.hide();
         obj1.setRowFilter(RowFilter.regexFilter(search.getText()));
     }//GEN-LAST:event_searchKeyReleased
 
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+    private void menuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuActionPerformed
         this.hide();
         menu_page frm=new menu_page();
         frm.setVisible(true);
-    }//GEN-LAST:event_jButton6ActionPerformed
+    }//GEN-LAST:event_menuActionPerformed
 
     /**
      * @param args the command line arguments
@@ -344,7 +341,6 @@ this.hide();
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
@@ -358,6 +354,7 @@ this.hide();
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JButton menu;
     private javax.swing.JTextField search;
     // End of variables declaration//GEN-END:variables
 }
