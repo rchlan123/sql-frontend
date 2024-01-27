@@ -189,7 +189,7 @@ public class return_book extends javax.swing.JFrame {
                 menuActionPerformed(evt);
             }
         });
-        getContentPane().add(menu, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 40, -1, 30));
+        getContentPane().add(menu, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 43, 30, -1));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fade_background.png"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));

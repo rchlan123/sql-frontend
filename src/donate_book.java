@@ -97,7 +97,7 @@ public class donate_book extends javax.swing.JFrame {
         search = new javax.swing.JTextField();
         jLabel8 = new javax.swing.JLabel();
         jButton5 = new javax.swing.JButton();
-        menu = new javax.swing.JButton();
+        menu1 = new javax.swing.JButton();
         jLabel16 = new javax.swing.JLabel();
 
         jLabel6.setFont(new java.awt.Font("Montserrat ExtraBold", 1, 14)); // NOI18N
@@ -237,15 +237,15 @@ public class donate_book extends javax.swing.JFrame {
         });
         getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 40, -1, -1));
 
-        menu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/menu icon.png"))); // NOI18N
-        menu.setBorderPainted(false);
-        menu.setContentAreaFilled(false);
-        menu.addActionListener(new java.awt.event.ActionListener() {
+        menu1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/menu icon.png"))); // NOI18N
+        menu1.setBorderPainted(false);
+        menu1.setContentAreaFilled(false);
+        menu1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                menuActionPerformed(evt);
+                menu1ActionPerformed(evt);
             }
         });
-        getContentPane().add(menu, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 40, -1, 30));
+        getContentPane().add(menu1, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 43, 30, -1));
 
         jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fade_background.png"))); // NOI18N
         getContentPane().add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
@@ -292,11 +292,11 @@ public class donate_book extends javax.swing.JFrame {
         obj1.setRowFilter(RowFilter.regexFilter(search.getText()));
     }//GEN-LAST:event_searchKeyReleased
 
-    private void menuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuActionPerformed
+    private void menu1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menu1ActionPerformed
         this.hide();
         menu_page frm=new menu_page();
         frm.setVisible(true);
-    }//GEN-LAST:event_menuActionPerformed
+    }//GEN-LAST:event_menu1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -354,7 +354,7 @@ public class donate_book extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JButton menu;
+    private javax.swing.JButton menu1;
     private javax.swing.JTextField search;
     // End of variables declaration//GEN-END:variables
 }

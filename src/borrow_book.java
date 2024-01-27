@@ -86,7 +86,7 @@ public class borrow_book extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         search = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
-        menu = new javax.swing.JButton();
+        menu1 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -199,15 +199,15 @@ public class borrow_book extends javax.swing.JFrame {
         });
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 40, -1, 30));
 
-        menu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/menu icon.png"))); // NOI18N
-        menu.setBorderPainted(false);
-        menu.setContentAreaFilled(false);
-        menu.addActionListener(new java.awt.event.ActionListener() {
+        menu1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/menu icon.png"))); // NOI18N
+        menu1.setBorderPainted(false);
+        menu1.setContentAreaFilled(false);
+        menu1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                menuActionPerformed(evt);
+                menu1ActionPerformed(evt);
             }
         });
-        getContentPane().add(menu, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 40, -1, 30));
+        getContentPane().add(menu1, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 43, 30, -1));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fade_background.png"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
@@ -251,11 +251,11 @@ public class borrow_book extends javax.swing.JFrame {
         frm.setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void menuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuActionPerformed
+    private void menu1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menu1ActionPerformed
         this.hide();
         menu_page frm=new menu_page();
-        frm.setVisible(true); 
-    }//GEN-LAST:event_menuActionPerformed
+        frm.setVisible(true);
+    }//GEN-LAST:event_menu1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -307,7 +307,7 @@ public class borrow_book extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextField jTextField1;
-    private javax.swing.JButton menu;
+    private javax.swing.JButton menu1;
     private javax.swing.JTextField search;
     // End of variables declaration//GEN-END:variables
 }
