@@ -1,3 +1,4 @@
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
@@ -14,6 +15,8 @@ public class action_window extends javax.swing.JFrame {
      */
     public action_window() {
         initComponents();
+               setDefaultCloseOperation(action_window.EXIT_ON_CLOSE);
+
     }
 
     /**
@@ -30,7 +33,7 @@ public class action_window extends javax.swing.JFrame {
         borrow = new javax.swing.JButton();
         return_book = new javax.swing.JButton();
         back = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -78,29 +81,34 @@ public class action_window extends javax.swing.JFrame {
         });
         getContentPane().add(back, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 440, -1, -1));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/background.png"))); // NOI18N
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 510));
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/background.png"))); // NOI18N
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void donateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_donateActionPerformed
-        donate_book pi = new donate_book();
+        this.dispose();
+        DonateBook pi = null;
+        pi = new DonateBook();
         pi.setVisible(true);
     }//GEN-LAST:event_donateActionPerformed
 
     private void borrowActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_borrowActionPerformed
+        this.dispose();
         borrow_book pi = new borrow_book();
         pi.setVisible(true);
     }//GEN-LAST:event_borrowActionPerformed
 
     private void return_bookActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_return_bookActionPerformed
+        this.dispose();
         return_book pi = new return_book();
         pi.setVisible(true);
     }//GEN-LAST:event_return_bookActionPerformed
 
     private void backActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backActionPerformed
+        this.dispose();
         this.hide();
         menu_page frm=new menu_page();
         frm.setVisible(true);
@@ -134,10 +142,8 @@ public class action_window extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new action_window().setVisible(true);
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            new action_window().setVisible(true);
         });
     }
 
@@ -145,8 +151,8 @@ public class action_window extends javax.swing.JFrame {
     private javax.swing.JButton back;
     private javax.swing.JButton borrow;
     private javax.swing.JButton donate;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JButton return_book;
     // End of variables declaration//GEN-END:variables
 }

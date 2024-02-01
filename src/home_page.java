@@ -14,6 +14,8 @@ public class home_page extends javax.swing.JFrame {
      */
     public home_page() {
         initComponents();
+               setDefaultCloseOperation(home_page.EXIT_ON_CLOSE);
+
     }
 
     /**
@@ -25,30 +27,30 @@ public class home_page extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel3 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
-        register = new javax.swing.JButton();
+        start = new javax.swing.JButton();
+        jLabel5 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel3.setFont(new java.awt.Font("Oswald", 1, 24)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setText("BOOK DROP-OFF & BORROW SYSTEM");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 240, 370, 70));
-
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/logo.png"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 160, -1, -1));
 
-        register.setFont(new java.awt.Font("Montserrat", 1, 14)); // NOI18N
-        register.setText("REGISTER");
-        register.addActionListener(new java.awt.event.ActionListener() {
+        start.setFont(new java.awt.Font("Montserrat", 1, 14)); // NOI18N
+        start.setText("START");
+        start.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                registerActionPerformed(evt);
+                startActionPerformed(evt);
             }
         });
-        getContentPane().add(register, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 310, 220, 30));
+        getContentPane().add(start, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 310, 220, 30));
+
+        jLabel5.setFont(new java.awt.Font("Oswald", 1, 24)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel5.setText("BOOK DROP-OFF & BORROW SYSTEM");
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 240, 370, 70));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/background.png"))); // NOI18N
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
@@ -57,10 +59,12 @@ public class home_page extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void registerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_registerActionPerformed
-        registration_page pi = new registration_page();
+    private void startActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_startActionPerformed
+            this.dispose();
+        menu_page pi = new menu_page();
         pi.setVisible(true);
-    }//GEN-LAST:event_registerActionPerformed
+        
+    }//GEN-LAST:event_startActionPerformed
 
     /**
      * @param args the command line arguments
@@ -100,8 +104,8 @@ public class home_page extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JButton register;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JButton start;
     // End of variables declaration//GEN-END:variables
 }
